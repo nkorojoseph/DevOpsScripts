@@ -1,2 +1,2 @@
 # azureDeploymentScripts
-Scripts for easy infrastructure deployment on azure
+Scripts and templates for for easy infrastructure deployment on azure
