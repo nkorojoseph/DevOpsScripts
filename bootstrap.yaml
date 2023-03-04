@@ -14,7 +14,7 @@
     tags: always
     authorized_key:
       user: josephansible
-      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICzCFRnkahHgTx0Cl20aPbOPFYUXJ0oqHfFvAWPmJZ/D ansible"
+      key: "ssh-ed25519 yoursshpublickey/D ansible"
 
   - name: add sudoers file for josephansible
     copy:
