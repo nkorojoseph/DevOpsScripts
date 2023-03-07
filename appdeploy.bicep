@@ -40,3 +40,21 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
     httpsOnly: true
   }
 }
+
+resource sqlServer 'Microsoft.Sql/servers@2014-04-01' ={
+  name: 'partsunlimiteddbserver'
+  location: resourceGroup().location
+
+}
+
+resource sqlServerDatabase 'Microsoft.Sql/servers/databases@2014-04-01' = {
+  parent: sqlServer
+  name: 'partsunlimited-yaml'
+  location: resourceGroup().location
+  properties: {
+    collation: 'collation'
+    edition: 'Basic'
+    maxSizeBytes: 'maxSizeBytes'
+    requestedServiceObjectiveName: 'Basic'
+  }
+}
